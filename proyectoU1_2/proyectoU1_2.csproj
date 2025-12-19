@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{59299315-4FA0-4A3E-870A-C7F0D08BBD54}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>proyectoU1_2</RootNamespace>
+    <AssemblyName>proyectoU1_2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_Author.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Author.Designer.cs">
+      <DependentUpon>Add_Author.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_discount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_discount.Designer.cs">
+      <DependentUpon>add_discount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_employee.Designer.cs">
+      <DependentUpon>add_employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADD_SALE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD_SALE.Designer.cs">
+      <DependentUpon>ADD_SALE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADD_STORE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD_STORE.Designer.cs">
+      <DependentUpon>ADD_STORE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_title.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_title.Designer.cs">
+      <DependentUpon>add_title.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADD_TitleAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD_TitleAuthor.Designer.cs">
+      <DependentUpon>ADD_TitleAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_interface.Designer.cs">
+      <DependentUpon>admin_interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authors.Designer.cs">
+      <DependentUpon>Authors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="client.Designer.cs">
+      <DependentUpon>client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="discounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="discounts.Designer.cs">
+      <DependentUpon>discounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee.Designer.cs">
+      <DependentUpon>employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface.Designer.cs">
+      <DependentUpon>Interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modify_Author.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modify_Author.Designer.cs">
+      <DependentUpon>Modify_Author.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modify_discount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modify_discount.Designer.cs">
+      <DependentUpon>modify_discount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modify_emp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modify_emp.Designer.cs">
+      <DependentUpon>modify_emp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modify_sale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modify_sale.Designer.cs">
+      <DependentUpon>modify_sale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modify_store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modify_store.Designer.cs">
+      <DependentUpon>modify_store.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modify_title.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modify_title.Designer.cs">
+      <DependentUpon>Modify_title.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modify_titleAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modify_titleAuthor.Designer.cs">
+      <DependentUpon>modify_titleAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="operator_interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="operator_interface.Designer.cs">
+      <DependentUpon>operator_interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sales.Designer.cs">
+      <DependentUpon>sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales_%28Administrator%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales_%28Administrator%29.Designer.cs">
+      <DependentUpon>Sales_%28Administrator%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sign_up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign_up.Designer.cs">
+      <DependentUpon>Sign_up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQLControl.cs" />
+    <Compile Include="stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock.Designer.cs">
+      <DependentUpon>stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="store.Designer.cs">
+      <DependentUpon>store.cs</DependentUpon>
+    </Compile>
+    <Compile Include="title.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="title.Designer.cs">
+      <DependentUpon>title.cs</DependentUpon>
+    </Compile>
+    <Compile Include="titleAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="titleAuthor.Designer.cs">
+      <DependentUpon>titleAuthor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_Author.resx">
+      <DependentUpon>Add_Author.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_discount.resx">
+      <DependentUpon>add_discount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_employee.resx">
+      <DependentUpon>add_employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD_SALE.resx">
+      <DependentUpon>ADD_SALE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD_STORE.resx">
+      <DependentUpon>ADD_STORE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_title.resx">
+      <DependentUpon>add_title.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD_TitleAuthor.resx">
+      <DependentUpon>ADD_TitleAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_interface.resx">
+      <DependentUpon>admin_interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authors.resx">
+      <DependentUpon>Authors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client.resx">
+      <DependentUpon>client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="discounts.resx">
+      <DependentUpon>discounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee.resx">
+      <DependentUpon>employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface.resx">
+      <DependentUpon>Interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modify_Author.resx">
+      <DependentUpon>Modify_Author.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modify_discount.resx">
+      <DependentUpon>modify_discount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modify_emp.resx">
+      <DependentUpon>modify_emp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modify_sale.resx">
+      <DependentUpon>modify_sale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modify_store.resx">
+      <DependentUpon>modify_store.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modify_title.resx">
+      <DependentUpon>Modify_title.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modify_titleAuthor.resx">
+      <DependentUpon>modify_titleAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="operator_interface.resx">
+      <DependentUpon>operator_interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="sales.resx">
+      <DependentUpon>sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales_%28Administrator%29.resx">
+      <DependentUpon>Sales_%28Administrator%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sign_up.resx">
+      <DependentUpon>Sign_up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock.resx">
+      <DependentUpon>stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="store.resx">
+      <DependentUpon>store.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="title.resx">
+      <DependentUpon>title.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="titleAuthor.resx">
+      <DependentUpon>titleAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="pubs\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
