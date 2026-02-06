@@ -21,3 +21,37 @@ Este sistema fue construido utilizando el ecosistema .NET, priorizando la estabi
 * Sistema Operativo Windows.
 * .NET Framework instalado.
 * Instancia local o remota de SQL Server configurada con el script de base de datos adjunto (`db_schema.sql`).
+
+
+# 💻 BiblioTec - Inventory Management System (Desktop)
+
+Desktop version of the BiblioTec platform, developed as a robust native application for centralized inventory management. This project represents the first iteration of the system, focused on performance and relational data management in local environments.
+
+## 🏗️ Architecture and Technologies
+This system was built using the .NET ecosystem, prioritizing stability and integration with enterprise tools:
+
+* **Language:** **C#** (Object-Oriented Programming for business logic).
+
+* **UI Framework:** **Windows Forms (.NET)** for designing a functional and user-friendly graphical user interface (GUI).
+
+* **Database:** **Microsoft SQL Server**.
+
+* Normalized relational schema design.
+
+* Data persistence management through direct queries and stored procedures.
+
+* * **Connection:** Implementation of secure connection strings to link the application to the database server.
+
+## 🚀 Features
+* **Full CRUD:** Add, delete, modify, and query items in the inventory.
+
+* **Validated Interface:** Windows Forms controls (TextBox, DataGridView, ComboBox) programmed to validate user data input and prevent errors.
+
+* **Visual Reports:** Real-time data visualization using interactive grids.
+
+## 🛠️ Runtime Requirements
+* Windows Operating System.
+
+* .NET Framework installed.
+
+* Local or remote SQL Server instance configured with the attached database script (`db_schema.sql`).
